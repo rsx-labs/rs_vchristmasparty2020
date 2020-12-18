@@ -1,0 +1,238 @@
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+    resize: both;
+    min-height: 100%;
+}
+div.main-screen {
+    height: 100vh;
+    background-image: url("../images/main_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.clear-screen {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.filler {
+    height: 250px;
+    width: 100%;
+    margin-left: auto;
+}
+div.filler-25 {
+    height: 25px;
+    width: 100%;
+    margin-left: auto;
+    display: flex; 
+    padding-right: 10px;
+    justify-content: flex-end;
+}
+
+div.bg-black {
+    background-color: black;
+}
+div.top-left {
+    padding: 5px;
+    text-align: right;
+}
+div.white {
+    color: white;
+}
+span.large {
+    font-size: 38pt;
+}
+span.medium {
+    font-size: 18pt;
+}
+footer.main {
+    width:100%;
+    height:30px;   /* Height of the footer */
+    text-align: center;
+    font-size: 8pt;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+#footer {
+    position:absolute;
+    left: 0;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Height of the footer */
+    text-align: center;
+    font-size: 8pt;
+}
+p {
+    padding:10px;
+}
+span.footer {
+    padding:0px;
+}
+.skills {
+    padding:5px;
+    font-size: 10pt;
+    line-height: 30px;
+    overflow: scroll;
+}
+p.links {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 14pt;
+    background: black;
+    padding-right: 10px;
+    text-align: center;
+}
+p.drop-first-letter::first-letter {
+    color:black;
+    float: left;
+    font-size: 60px;
+    line-height: 50px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  
+}
+p.quote {
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+a {
+    font-weight: bold;
+    color: whitesmoke;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a.to-top {
+    color: black;
+    font-size: 10pt;
+}
+a:visited.to_top {
+    color: black;
+}
+a:hover.to_top {
+    color: black;
+}
+a.alt {
+    color: black;
+    font-size: 12pt;
+}
+a:visited.alt {
+    color: black;
+}
+a:hover.alt {
+    color: black;
+}
+
+img.small-icon {
+    width: 25px;
+    height: 25px;
+}
+img.nav-icon {
+    width: 30px;
+    height: 30px;
+}
+img.img-circle {
+    border-radius: 50%;
+}
+span.badge {
+    background: whitesmoke;
+    color: black;
+}
+span.label {
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #B6B5B5;
+    color: black;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-radius: 10%;
+    position: relative;
+    margin: 0px 1px;
+}
+nav {
+    background: transparent;
+}
+div.topnav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    opacity:0.8;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.topnav a:hover:not(.active) {
+    background-color:#5A5757;
+}
+.active {
+    background-color: whitesmoke;
+}
+.topnav .icon {
+    display: none;
+}
+
+
+/* Tooltip text */
+span.label .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 0;
+    border: 0.5 dotted grey;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1; 
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px;
+}
+span.label .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+span.label:hover .tooltiptext {
+    visibility: visible;
+}
